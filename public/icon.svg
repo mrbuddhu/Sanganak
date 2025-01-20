@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+  <!-- Globe with India -->
+  <g transform="translate(256, 200)">
+    <!-- Main Globe Circle -->
+    <circle cx="0" cy="0" r="120" stroke="currentColor" stroke-width="8" fill="none"/>
+    
+    <!-- Grid Lines -->
+    <path d="M0 -120 V120" stroke="currentColor" stroke-width="3" fill="none"/>
+    <path d="M-120 0 H120" stroke="currentColor" stroke-width="3" fill="none"/>
+    <path d="M-100 -70 C100 -70 100 -70 100 -70" stroke="currentColor" stroke-width="3" fill="none"/>
+    <path d="M-100 70 C100 70 100 70 100 70" stroke="currentColor" stroke-width="3" fill="none"/>
+    <path d="M-84.85 -84.85 C84.85 84.85" stroke="currentColor" stroke-width="3" fill="none"/>
+    <path d="M84.85 -84.85 C-84.85 84.85" stroke="currentColor" stroke-width="3" fill="none"/>
+    
+    <!-- India Landmass (More Detailed) -->
+    <path d="M20 -40 
+             Q30 -45 40 -35
+             Q50 -25 45 -15
+             Q40 -5 45 5
+             Q50 15 45 25
+             Q40 35 30 40
+             Q20 45 10 40
+             Q0 35 -5 25
+             Q-10 15 -5 5
+             Q0 -5 -5 -15
+             Q-10 -25 0 -35
+             Q10 -45 20 -40Z" 
+          fill="currentColor"/>
+  </g>
+  
+  <!-- SANGANAK Text -->
+  <text x="256" y="400" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="48" font-weight="900" fill="currentColor" letter-spacing="2">
+    SANGANAK
+  </text>
+</svg>

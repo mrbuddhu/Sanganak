@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+}
+
+body {
+  @apply bg-black text-white overflow-x-hidden;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (min-width: 640px) {
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.5; transform: scale(0.5); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+.star {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: twinkle 4s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  /* Removed conflicting container styles */
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  p {
+    @apply text-sm;
+  }
+  .button {
+    @apply text-sm py-2 px-4;
+  }
+}
+
+/* Ensure text doesn't overflow on small screens */
+@media (max-width: 480px) {
+  h1, h2, h3, p {
+    word-break: break-word;
+  }
+}
+
+/* Improve readability on mobile */
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Adjust floating animation for mobile */
+@media (max-width: 640px) {
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-3px);
+    }
+  }
+}

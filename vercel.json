@@ -1,0 +1,17 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next",
+      "config": {
+        "maxLambdaSize": "15mb",
+        "excludeFiles": "!(public/**/*|styles/**/*|pages/**/*|components/**/*|lib/**/*)"
+      }
+    }
+  ],
+  "build": {
+    "env": {
+      "NODE_OPTIONS": "--max_old_space_size=4096"
+    }
+  }
+}

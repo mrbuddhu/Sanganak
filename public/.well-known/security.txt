@@ -1,0 +1,5 @@
+Contact: mailto:security@sanganak.org
+Expires: 2026-01-20T00:00:00.000Z
+Preferred-Languages: en
+Policy: https://sanganak.org/security-policy
+Hiring: https://sanganak.org/careers
