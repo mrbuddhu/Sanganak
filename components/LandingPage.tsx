@@ -1,41 +1,11 @@
 'use client';
 
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { 
-  ArrowRight,
-  ChevronLeft,
-  ChevronRight,
-  CheckCircle2,
-  Code2,
-  ExternalLink,
-  Play,
-  Linkedin,
-  Menu,
-  Star,
-  Clock,
-  X,
-  Zap,
-  Search,
-  Palette,
-  Rocket,
-  PenTool,
-  Globe,
-  Smartphone,
-  Cloud,
-  Brain,
-  Settings2,
-  Box,
-  Instagram,
-  Github,
-  Youtube
-} from 'lucide-react';
-import dynamic from 'next/dynamic';
-import { GuideDownloadForm } from './GuideDownloadForm';
+import { Card } from "@/components/ui/card";
+import { ArrowRight, ChevronRight, Menu, X } from 'lucide-react';
 
 const floatKeyframes = `
   @keyframes float {
