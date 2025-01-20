@@ -3,9 +3,35 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { ArrowRight, ChevronRight, Menu, X } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { 
+  ArrowRight,
+  ChevronRight,
+  ChevronLeft,
+  CheckCircle2,
+  Code2,
+  ExternalLink,
+  Play,
+  Linkedin,
+  Menu,
+  Star,
+  Clock,
+  X,
+  Zap,
+  Search,
+  Palette,
+  Rocket,
+  PenTool,
+  Globe,
+  Smartphone,
+  Brain,
+  Box,
+  Instagram,
+  Github,
+  Youtube
+} from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const floatKeyframes = `
   @keyframes float {
